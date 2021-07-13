@@ -56,6 +56,9 @@ define( 'AUTH_SALT',        'put your unique phrase here' );
 define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
 define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
+define('WP_HOME','https://ekansh-test.squareops.xyz');
+define('WP_SITEURL','https://ekansh-test.squareops.xyz');
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)   $_SERVER['HTTPS']='on';
 
 /**#@-*/
 
@@ -80,7 +83,7 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
-
+define( 'FS_METHOD', 'direct' );
 /* Add any custom values between this line and the "stop editing" line. */
 
 
