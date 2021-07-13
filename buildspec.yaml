@@ -8,10 +8,10 @@ env:
 phases:
     build:
        commands:
-         - sed -i 's/database_name_here/'$DB_Name'/' wp-config.php 
-         - sed -i 's/username_here/'$UserName'/' wp-config.php
-         - sed -i 's/password_here/'$Password'/' wp-config.php
-         - sed -i 's/localhost/'$Host'/' wp-config.php
+         - sed -i 's/database_name_here/'$DB_Name'/' wordpress/wp-config.php 
+         - sed -i 's/username_here/'$UserName'/' wordpress/wp-config.php
+         - sed -i 's/password_here/'$Password'/' wordpress/wp-config.php
+         - sed -i 's/localhost/'$Host'/' wordpress/wp-config.php
 artifacts:
   files:
     - '**/*'
